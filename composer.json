@@ -1,0 +1,34 @@
+{
+    "name": "aboutyou/recruiting",
+    "description": "This is the AboutYou recruiting code task. This source is for a restricted audience and you are not allowed to pass it to other people without permission.",
+    "authors": [
+        {
+            "name": "Andrei Carpov",
+            "email": "andrei.carpov@aboutyou.de"
+        }
+    ],
+    "secure-http" : false,
+    "require": {
+        "php": ">=5.6.4",
+        "level-2/dice": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AboutYou\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "test/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.2.0"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
