@@ -14,6 +14,7 @@ class ProductsFilter
      * @param \AboutYou\Service\ProductServiceInterface $productService
      */
     public function __construct(
+        //Preference is defined in di/rules.php
         \AboutYou\Service\ProductServiceInterface $productService
     )
     {

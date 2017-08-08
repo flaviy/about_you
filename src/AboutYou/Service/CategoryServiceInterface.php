@@ -2,7 +2,10 @@
 
 namespace AboutYou\Service;
 
-
+/**
+ * Interface CategoryServiceInterface
+ * @package AboutYou\Service
+ */
 interface CategoryServiceInterface
 {
     /**

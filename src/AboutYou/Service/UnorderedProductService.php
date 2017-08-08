@@ -4,7 +4,8 @@ namespace AboutYou\Service;
 use AboutYou\Entity\Category;
 
 /**
- * This class is an (unfinished) example implementation of an unordered product service.
+ * Implementation of ProductServiceInterface
+ * Returns unordered list of products by category
  */
 class UnorderedProductService implements ProductServiceInterface
 {

@@ -31,6 +31,7 @@ class CategoryService implements CategoryServiceInterface
     }
 
     /**
+     * Read source data and create category entity
      * @param int $categoryId
      * @return null
      */

@@ -7,6 +7,10 @@ use AboutYou\Helper\ProductsFilter;
 use AboutYou\Helper\ProductsGetter;
 use AboutYou\Service\CategoryService;
 
+/**
+ * Class Application
+ * @package AboutYou
+ */
 class Application {
 
     protected $dice;
@@ -19,6 +23,12 @@ class Application {
 
     protected $categoryService;
 
+    /**
+     * Application constructor.
+     * @param ProductsFilter $productsFilter
+     * @param ProductsGetter $productsGetter
+     * @param CategoryService $categoryService
+     */
     public function __construct(
         ProductsFilter $productsFilter,
         ProductsGetter $productsGetter,
@@ -35,6 +45,9 @@ class Application {
 
         $products =  $this->productsGetter->getProducts('Clothes');
 
+        echo "<pre>";
+        var_dump($products);
+        echo "</pre>";
 
         $filteredProducts = $this->productsFilter->filterProducts('Clothes', '34');
         echo "<pre>";

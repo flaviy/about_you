@@ -7,6 +7,10 @@ namespace AboutYou\Helper;
  */
 class CategoryRowDataModifier implements RowDataModifierInterface
 {
+    /**Modify entity row data
+     * @param $data
+     * @return mixed
+     */
     public function modify($data)
     {
         if(!empty($data->products)){

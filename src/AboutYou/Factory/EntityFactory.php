@@ -17,6 +17,11 @@ class EntityFactory
     /** @var  EntityValidatorFactory $entityValidatorFactory */
     protected $entityValidatorFactory;
 
+    /**
+     * EntityFactory constructor.
+     * @param EntityDataModifierFactory $entityDataModifierFactory
+     * @param EntityValidatorFactory $entityValidatorFactory
+     */
     public function __construct(
         EntityDataModifierFactory $entityDataModifierFactory,
         EntityValidatorFactory $entityValidatorFactory

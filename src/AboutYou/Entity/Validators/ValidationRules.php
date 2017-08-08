@@ -42,6 +42,7 @@ class ValidationRules
     }
 
     /**
+     * Check if $check is instance of $className
      * @param $check
      * @param $className
      * @return bool
